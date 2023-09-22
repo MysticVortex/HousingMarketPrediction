@@ -366,7 +366,8 @@ allfeature=list(set(wpca+wopca))
 
 ## let's try a 5-fold CV
 from sklearn.model_selection import KFold
-from sklearn.grid_search import GridSearchCV
+#from sklearn.grid_search import GridSearchCV
+from sklearn.model_selection import GridSearchCV
 import xgboost as xgb
 kf = KFold(5,shuffle =True)
 
